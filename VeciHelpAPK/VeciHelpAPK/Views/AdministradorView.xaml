@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:VeciHelpAPK.Models" xmlns:control="clr-namespace:VeciHelpAPK.Controls"
+              mc:Ignorable="d"
+             x:Class="VeciHelpAPK.Views.AdministradorView" Title="ADMINISTRADOR">
+
+
+    
+
+    <ContentPage BackgroundColor="#242525">
+        <ContentPage.Content>
+            <StackLayout Padding="40">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    
+                    <Image Source="p1.png" WidthRequest="30" HeightRequest="30"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    
+                </StackLayout>
+                <Label Text="ENROLAR" TextColor="White" FontSize="Title" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Padding="10,10,10,130"/>
+                <Label Text="Ingresa al usuario y envía un código de verificación vía correo" TextColor="white" FontSize="Medium" VerticalOptions="Start" HorizontalOptions="Center"/>
+                <StackLayout Padding="10,10,10,90">
+                    <control:StanndardEntry
+                        x:Name="EnrolarCorreo"
+                        Placeholder="Ingrese un Correo" 
+                        BackgroundColor="#31FFFFFF" 
+                        BorderColor="White"
+                        TextColor="White"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        HeightRequest="42"
+                        PlaceholderColor="#ededed"
+                        VerticalTextAlignment="Center" 
+                        HorizontalOptions="Center" 
+                        WidthRequest="400" 
+                        HorizontalTextAlignment="Center"
+                        Keyboard="Email"/>
+                    <Button
+                        ImageSource="enrolarUsuario.png"
+                        Padding="50,10,50,50"
+                    x:Name="ButtonEnrolar"
+                    Clicked="ButtonEnrolar_Clicked"
+                        BackgroundColor="#00000"
+                        />
+                </StackLayout>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+
+
+
+
+    <ContentPage BackgroundColor="#242525">
+        <ContentPage.Content>
+            <StackLayout Padding="40">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p1.png" WidthRequest="30" HeightRequest="30"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    
+                </StackLayout>
+                <Label Text="ELIMINAR" TextColor="White" FontSize="Title" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Padding="10,10,10,130"/>
+                <Label Text="Elimina un usuario buscando por correo registrado" TextColor="white" FontSize="Medium" VerticalOptions="Start" HorizontalOptions="Center"/>
+                <StackLayout Padding="10,10,10,90">
+                    <control:StanndardEntry 
+                        x:Name="EliminarCorreo" 
+                        BackgroundColor="#31FFFFFF" 
+                        BorderColor="White"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        TextColor="White"
+                        HeightRequest="42"
+                        PlaceholderColor="#ededed"
+                        Placeholder="Ingrese un Correo" 
+                        VerticalTextAlignment="Center"
+                        HorizontalOptions="Center" 
+                        WidthRequest="400" 
+                        HorizontalTextAlignment="Center"
+                        Keyboard="Email"/>
+                    <Button
+                        ImageSource="eliminarUsuario.png"
+                        Padding="50,10,50,50"
+                    x:Name="ButtonEliminar"
+                    Clicked="ButtonEliminar_Clicked"
+                        BackgroundColor="#00000"
+                        />
+                </StackLayout>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+
+
+
+    <ContentPage BackgroundColor="#242525">
+        <ContentPage.Content>
+            <StackLayout Padding="40">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p1.png" WidthRequest="30" HeightRequest="30"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+
+                </StackLayout>
+                <Label  Text="ASOCIAR" TextColor="White" FontSize="Title" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Padding="10,10,10,130"/>
+
+                <Label Text="Asocia vecinos para alertas CASA VECINO" TextColor="white" FontSize="Medium" VerticalOptions="Start" HorizontalOptions="Center"/>
+
+                <StackLayout Padding="10,10,10,90">
+                    <control:StanndardEntry
+                        x:Name="CorreoAsociar" 
+                        BackgroundColor="#31FFFFFF" 
+                        BorderColor="White"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        TextColor="White"
+                        HeightRequest="42"
+                        PlaceholderColor="#ededed"
+                        Placeholder="Ingrese un Correo" 
+                        HorizontalOptions="Center" 
+                        WidthRequest="400" 
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        Keyboard="Email"/>
+                    <Button
+                        ImageSource="asociar.png"
+                        Padding="50,10,50,50"
+                        BackgroundColor="#00000"
+                    x:Name="ButtonAsociar"
+                    Clicked="ButtonAsociar_Clicked"
+                        />
+                </StackLayout>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage BackgroundColor="#242525">
+        <ContentPage.Content>
+            <StackLayout Padding="40">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p1.png" WidthRequest="30" HeightRequest="30"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+
+                </StackLayout>
+                <Label Text="DESASOCIAR" 
+                       TextColor="White"
+                       FontSize="Title" 
+                       HorizontalOptions="CenterAndExpand" 
+                       HorizontalTextAlignment="Center" 
+                       Padding="10,10,10,130"/>
+
+
+                <Label Text="Desasocia vecinos para alertas CASA VECINO" TextColor="white" FontSize="Medium" VerticalOptions="Start" HorizontalOptions="Center"/>
+
+                <StackLayout Padding="10,10,10,90">
+                    <control:StanndardEntry 
+                        x:Name="CorreoDesasociar" 
+                        BackgroundColor="#31FFFFFF" 
+                        BorderColor="White"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        TextColor="White"
+                        HeightRequest="42"
+                        PlaceholderColor="#ededed"
+                        Placeholder="Ingrese un Correo" 
+                        VerticalTextAlignment="Center" 
+                        HorizontalOptions="Center"
+                        WidthRequest="400" 
+                        HorizontalTextAlignment="Center"
+                        Keyboard="Email"/>
+                    <Button
+                        ImageSource="desasociar.png"
+                        Padding="50,10,50,50"
+                    x:Name="ButtonDesasociar"
+                    Clicked="ButtonDesasociar_Clicked"
+                        BackgroundColor="#00000"
+                        />
+                </StackLayout>
+
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+
+
+    <ContentPage BackgroundColor="#242525">
+        <ContentPage.Content>
+            <StackLayout Padding="40">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p2.png" WidthRequest="10" HeightRequest="10"/>
+                    <Image Source="p1.png" WidthRequest="30" HeightRequest="30"/>
+
+                </StackLayout>
+                <Label Text="ORGANIZACIÓN" 
+                       TextColor="White"
+                       FontSize="Title" 
+                       HorizontalOptions="CenterAndExpand" 
+                       HorizontalTextAlignment="Center" 
+                       Padding="10,10,10,130"/>
+
+                <Label Text="Modifica datos de tu organización" 
+                       TextColor="white" 
+                       FontSize="Medium" 
+                       VerticalOptions="Start" 
+                       HorizontalOptions="Center"/>
+
+
+                <StackLayout Padding="10,100,10,90">
+                    <Button
+                        ImageSource="Comunidad2.png"
+                        Padding="50,10,50,50"
+                        x:Name="ButtonOrganizacion"
+                        Clicked="ButtonOrganizacion_Clicked"
+                        BackgroundColor="#00000"
+                        />
+                </StackLayout>
+            </StackLayout>
+        </ContentPage.Content>
+
+
+
+    </ContentPage>
+</CarouselPage>

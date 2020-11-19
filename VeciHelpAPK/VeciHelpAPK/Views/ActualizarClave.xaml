@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:control="clr-namespace:VeciHelpAPK.Controls"
+             mc:Ignorable="d"
+             x:Class="VeciHelpAPK.Views.ActualizarClave"
+             Title="CONTRASEÑA"
+             BackgroundColor="#242525">
+
+  
+
+    <ContentPage.Content>
+        <StackLayout Padding ="30" >
+            <StackLayout Padding="10">
+                <Label Text="Actualización de contraseña"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                HorizontalTextAlignment="Center"
+                   FontSize="Large"
+                   TextColor="White"
+                   BackgroundColor="#00000"
+                   FontAttributes="Bold"
+                   />
+            </StackLayout>
+
+            <StackLayout Padding="30,85,30,10">
+                
+                <control:StanndardEntry 
+                        x:Name="txtOldPass" 
+                       Placeholder="Contraseña Antigua" 
+                       HorizontalOptions="Center" 
+                       WidthRequest="400" 
+                        BackgroundColor="#31FFFFFF" 
+                        BorderColor="White"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        TextColor="White"
+                        HeightRequest="42"
+                        HorizontalTextAlignment="Center"
+                        PlaceholderColor="#ededed"
+                        IsPassword="True"
+                    />
+
+                <control:StanndardEntry x:Name="txtNewPass" 
+                       Placeholder="Contraseña Nueva" 
+                       HorizontalOptions="Center"
+                       WidthRequest="400" 
+                        BackgroundColor="#31FFFFFF" 
+                       BorderColor="White"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        TextColor="White"
+                        HeightRequest="42"
+                        HorizontalTextAlignment="Center"
+                        PlaceholderColor="#ededed"
+                        IsPassword="True"/>
+                
+                <control:StanndardEntry x:Name="txtNewPass2" 
+                       Placeholder="Repetir Contraseña" 
+                       HorizontalOptions="Center"
+                       WidthRequest="400" 
+                      BackgroundColor="#31FFFFFF" 
+                    BorderColor="White"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    TextColor="White"
+                    HeightRequest="42"
+                    HorizontalTextAlignment="Center"
+                    PlaceholderColor="#ededed"
+                    IsPassword="True"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Button x:Name="ButtonValidar" Clicked="ButtonValidar_Clicked" Text="Actualizar"
+                    BackgroundColor="#2FBB62" 
+                    TextColor="White" 
+                    CornerRadius="20" 
+                    HeightRequest="80"
+                    FontSize="20"
+                    FontAttributes="Bold" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
